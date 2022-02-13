@@ -4,6 +4,9 @@
 #include "Platform.hpp"
 
 
+constexpr f32 RENDER_SCALE = 0.1f;
+
+
 void
 DrawRectInPixels(Buffer buffer, s32 x0, s32 y0, s32 x1, s32 y1, u32 color);
 

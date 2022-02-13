@@ -20,14 +20,13 @@ DrawRectInPixels(Buffer buffer, s32 x0, s32 y0, s32 x1, s32 y1, u32 color) {
 
 void
 DrawRect(Buffer buffer, f32 x, f32 y, f32 half_width, f32 half_height, u32 color) {
-    constexpr f32 RENDER_SCALE = 0.1f;
     x *= buffer.height * RENDER_SCALE;
     y *= buffer.height * RENDER_SCALE;
     half_width *= buffer.height * RENDER_SCALE;
     half_height *= buffer.height * RENDER_SCALE;
 
-    x += half_width / 2.0f;
-    y += half_height / 2.0f;
+    x += buffer.width / 2.0f;
+    y += buffer.height / 2.0f;
 
     // Convert to pixels
     s32 x0 = static_cast<s32>(x - half_width);
