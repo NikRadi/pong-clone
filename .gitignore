@@ -1,0 +1,8 @@
+# Files
+setup_msvc.bat
+pong-win32.sln
+
+# Folders
+bin/
+obj/
+
