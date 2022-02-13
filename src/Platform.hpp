@@ -29,5 +29,8 @@ struct Buffer {
 void
 UpdateButtonState(Input *input, bool is_key_down, s32 button);
 
+bool
+IsButtonDown(Input input, s32 button);
+
 #endif // PONG_PLATFORM_HPP
 
