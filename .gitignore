@@ -1,4 +1,5 @@
 # Files
+*.swp
 setup_msvc.bat
 pong-win32.sln
 
